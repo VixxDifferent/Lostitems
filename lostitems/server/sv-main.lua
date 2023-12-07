@@ -76,11 +76,23 @@ RegisterCommand('returnlostitems', function(source, args, rawCommand)
     end
 
     exports.ox_inventory:ReturnInventory(playerId)
-    TriggerClientEvent('chat:addMessage', source, {
-        template = '{0} You have returned {1}\'s Lost items.',
-        color = {252, 0, 0},
-        args = {'[!]:', targetPlayer.getName()}
+
+    TriggerClientEvent('ox_lib:notify', source, { 
+        description = 'You have returned ' .. targetPlayer.getName() .. '\'s Lost items.', 
+        position = 'top-right', 
+        style = { backgroundColor = '#141517', 
+        color = '#C1C2C5', 
+        ['.description'] = { color = '#909296'}}, 
+        type = 'success' 
     })
+
+
+    -- TriggerClientEvent('chat:addMessage', source, {
+    --     template = '{0} You have returned {1}\'s Lost items.',
+    --     color = {252, 0, 0},
+    --     args = {'[!]:', targetPlayer.getName()}
+    -- })
+    
 end)
 
 
