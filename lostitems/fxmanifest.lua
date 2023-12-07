@@ -13,7 +13,9 @@ description 'A lostitems Resource that shows players their items when they do /l
 --[[ Manifest ]] --
 
 server_scripts {
-    'server/sv-main.lua'
+    'server/sv-main.lua',
+    '@ox_lib/init.lua',
+
 }
 
 shared_scripts {
