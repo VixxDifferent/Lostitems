@@ -7,8 +7,8 @@ game 'gta5'
 --[[ Resource Information ]] --
 name 'lostitems'
 author 'Vixx'
-version '1.0.0' -- this is most likely the last time i'm going to touch this script 9/23/2023.
-description 'A lostitems Resource that shows players their items when they do /lostitems.'
+version '1.0.0' 
+description 'A lostitems Resource that shows players their items.'
 
 --[[ Manifest ]] --
 
